@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Snap Kit</string>
+    <string name="title_home">@string/app_name</string>
+
+    <string name="title_login">Login Kit</string>
+    <string name="title_bitmoji">Bitmoji Kit</string>
+    <string name="title_creative">Creative Kit</string>
+    <string name="title_story">Story Kit</string>
+    <string name="title_ad">Ad Kit</string>
+    <string name="title_camera">Camera Kit</string>
+</resources>

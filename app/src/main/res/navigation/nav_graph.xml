@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="dev.all4.snapkit.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="dev.all4.snapkit.ui.login.LoginFragment"
+        android:label="@string/title_login"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/navigation_creative"
+        android:name="dev.all4.snapkit.ui.creative.CreativeFragment"
+        android:label="@string/title_creative"
+        tools:layout="@layout/fragment_creative" />
+
+    <fragment
+        android:id="@+id/navigation_bitmoji"
+        android:name="dev.all4.snapkit.ui.bitmoji.BitmojiFragment"
+        android:label="@string/title_bitmoji"
+        tools:layout="@layout/fragment_bitmoji" />
+
+    <fragment
+        android:id="@+id/navigation_story"
+        android:name="dev.all4.snapkit.ui.story.StoryFragment"
+        android:label="@string/title_story"
+        tools:layout="@layout/fragment_story" />
+
+    <fragment
+        android:id="@+id/navigation_ad"
+        android:name="dev.all4.snapkit.ui.ad.AdFragment"
+        android:label="@string/title_ad"
+        tools:layout="@layout/fragment_ad" />
+
+    <fragment
+        android:id="@+id/navigation_camera"
+        android:name="dev.all4.snapkit.ui.camera.CameraFragment"
+        android:label="@string/title_camera"
+        tools:layout="@layout/fragment_camera" />
+</navigation>
