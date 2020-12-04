@@ -1,3 +1,5 @@
+import java.net.URI
+
 buildscript {
     repositories {
         google()
@@ -14,6 +16,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url = URI("https://storage.googleapis.com/snap-kit-build/maven") }
     }
 }
 

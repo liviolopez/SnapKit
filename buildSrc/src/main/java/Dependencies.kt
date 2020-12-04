@@ -41,6 +41,7 @@ object Dep {
         const val livedata = "2.2.0"
         const val retrofit = "2.9.0"
         const val glide = "4.11.0"
+        const val snapchat = "1.6.7"
     }
 
     private val libs = mapOf(
@@ -92,6 +93,14 @@ object Dep {
 
             kapt to mapOf(
             "compiler" to "com.github.bumptech.glide:compiler:${V.glide}")
+        ),
+
+        "SnapChat" to mapOf(
+            impl to mapOf(
+            "core" to "com.snapchat.kit.sdk:core:${V.snapchat}",
+            "login" to "com.snapchat.kit.sdk:login:${V.snapchat}",
+            "bitmoji" to "com.snapchat.kit.sdk:bitmoji:${V.snapchat}",
+            "creative" to "com.snapchat.kit.sdk:creative:${V.snapchat}")
         )
     )
 
