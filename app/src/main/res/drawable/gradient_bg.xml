@@ -14,13 +14,13 @@
                 android:startY="2.6645353E-14"
                 android:type="linear">
                 <item
-                    android:color="#FFFFFF"
+                    android:color="#000000"
                     android:offset="0" />
                 <item
-                    android:color="#FFFFFF"
+                    android:color="#000000"
                     android:offset="0.6500" />
                 <item
-                    android:color="#88FFFFFF"
+                    android:color="#88000000"
                     android:offset="0.8500" />
                 <item
                     android:color="#00000000"

@@ -8,4 +8,8 @@
     <string name="title_story">Story Kit</string>
     <string name="title_ad">Ad Kit</string>
     <string name="title_camera">Camera Kit</string>
+=
+    <string name="external_id">External ID</string>
+    <string name="display_name">Display Name</string>
+    <string name="logout_button">Unlink account</string>
 </resources>

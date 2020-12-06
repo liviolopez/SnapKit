@@ -10,34 +10,145 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/text_login"
+        <RelativeLayout
+            android:id="@+id/progress_bar_container"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="match_parent"
+            android:visibility="visible">
 
-        <ImageView
-            android:id="@+id/iv_login"
-            android:layout_width="@dimen/icon_kit"
-            android:layout_height="@dimen/icon_kit"
-            android:src="@drawable/icon_login"
-            android:layout_centerInParent="true"/>
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/log_in_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:text="@string/display_name"/>
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:paddingTop="15dp"
+                android:text="@string/external_id"/>
+
+            <TextView
+                android:id="@+id/tv_external_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="@dimen/icon_kit"
+                android:layout_height="@dimen/icon_kit"
+                android:src="@drawable/icon_login"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="15dp"
+                android:layout_marginBottom="15dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bt_sign_out"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="15dp"
+                app:cardBackgroundColor="@color/colorSnap"
+                android:clickable="true"
+                app:cardCornerRadius="25dp"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/snapchat"
+                    android:layout_marginStart="40dp"
+                    android:layout_gravity="start|center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logout_button"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
 
         <RelativeLayout
-            android:id="@+id/snap_login_button_container"
+            android:id="@+id/log_out_container"
             android:layout_width="match_parent"
-            android:gravity="center_horizontal"
-            android:layout_height="50dp"
-            android:visibility="visible"
-            android:layout_below="@+id/iv_login">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/text_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_login"
+                android:layout_width="@dimen/icon_kit"
+                android:layout_height="@dimen/icon_kit"
+                android:src="@drawable/icon_login"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"/>
+
+            <RelativeLayout
+                android:id="@+id/bt_sign_in"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="50dp"
+                android:visibility="visible"
+                android:layout_below="@+id/iv_login">
+
+            </RelativeLayout>
 
         </RelativeLayout>
 

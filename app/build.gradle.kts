@@ -12,7 +12,7 @@ android {
     ndkVersion = Sdk.ndk
 
     defaultConfig {
-        applicationId = "dev.all4.snapKit"
+        applicationId = "dev.all4.snapkit"
         minSdkVersion(Sdk.min)
         targetSdkVersion(Sdk.target)
 

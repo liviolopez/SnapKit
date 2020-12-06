@@ -11,5 +11,4 @@ class LoginViewModel : ViewModel() {
     }
 
     val text: LiveData<String> = _text
-
 }
